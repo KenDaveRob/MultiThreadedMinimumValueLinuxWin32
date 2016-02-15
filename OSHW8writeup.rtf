@@ -1,0 +1,734 @@
+{\rtf1\ansi\deff0\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset128 Times New Roman;}{\f4\fswiss\fprq1\fcharset0 Consolas;}{\f5\froman\fprq0\fcharset0 TimesNewRomanPSMT;}{\f6\froman\fprq0\fcharset128 ;}{\f7\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f8\fnil\fprq2\fcharset0 Mangal;}{\f9\fnil\fprq0\fcharset128 Mangal;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue128;\red0\green128\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033 Default;}
+{\*\cs15\snext15\cf2\ul\ulc0\langfe255\lang255 Internet Link;}
+{\s16\sbasedon0\snext17{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb240\sa120\keepn\cf0\kerning1\hich\af7\langfe2052\dbch\af8\loch\f2\fs28\lang1033 Heading;}
+{\s17\sbasedon0\snext17{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang1033 Text body;}
+{\s18\sbasedon17\snext18{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af9\loch\f0\fs24\lang1033 List;}
+{\s19\sbasedon0\snext19{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb120\sa120\cf0\i\kerning1\hich\af0\langfe2052\dbch\af9\ai\loch\f0\fs24\lang1033 Caption;}
+{\s20\sbasedon0\snext20{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af0\langfe2052\dbch\af9\loch\f0\fs24\lang1033 Index;}
+{\s21\sbasedon0\snext21{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\noline\cf0\kerning1\hich\af6\langfe2052\dbch\af8\loch\f0\fs24\lang1033 Table Contents;}
+}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment OpenOffice}{\vern4000}}\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709
+
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse195\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default;}}
+\formshade{\*\pgdscno0}\paperh15840\paperw12240\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1\qc{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+Operating Systems CSC 415 HW #8}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1\qr{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+December, 16, 2013}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1\qr{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+Kenneth Robertson}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs30\loch\f3
+Files:}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\loch\f3
+\tab -OSHW8linux.c}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\loch\f3
+\tab -OSHW8win32.c}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs30\loch\f3
+Description:}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+\tab This program uses an insertion sort function that sorts only part of an array.  The program then creates many threads that call this function to sort different sections of the array.  The result is that each partition is sorted.  Once the threads are done executing the main thread can then run a function that  uses these partitions as a list of potential minimum values which it scans to find the smallest.  }
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+\tab This program takes at least two command line arguments (I added an, optional, third so that the printing of the array could be turned off for large arrays).  The first argument P is an integer used to determine the size of an array of random integers (the array will be of size }{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+2}{\cf1{\*\updnprop5801}\up9\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+P }{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+).  The second argument N is used to determine both the number of threads and the number of partitions that he array of random integers is split into (this value will be 2}{\cf1{\*\updnprop5801}\up9\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+N }{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+).   These arrays are allocated, and the random integer array is given random values. Next an array if integers representing the first index into each of the partitions is created of size 2}{\cf1{\*\updnprop5801}\up9\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+N}{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+ this will represent the minimum index after each partition is sorted, so its called minIndices)   An array of thread handles is also created, also of size 2}{\cf1{\*\updnprop5801}\up9\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+N}{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+.  I created a struct called ThreadInput containing startIndex, endIndex, and threadNumber; this ThreadInput is used to pass information to the thread function.  It was necessary to create an array of 2}{\cf1{\*\updnprop5801}\up9\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+N }{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+of these, one for each thread.   I found it necessary to create an array bools of size 2}{\cf1{\*\updnprop5801}\up9\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+N}{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+ that indicates if a partition has been completely exhausted of all of its values so that it will be ignored  later on in the program.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+\tab Next, the initial contents of the array are printed (I added a command line option to turn this off for large arrays, so that the user doesn't have to wait for a huge array to print).  A time-stamp is taken and stored, and then the loop to generate the threads is started.  Inside the loop before the threads are created the correct ThreadInfo data for that thread is stored.  The main thread then waits for the threads to complete.  Once they have completed another time-stamp is taken and sorted.   The result of the difference of the initial and final time stamp is printed so the user can see how long it took for the threads to complete there sorting.  The thread function is essentially just a insertion sort with some slight alteration to make sure that it doesn't alter any values before or after its partition.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+\tab Next a loop is created that cycles through the length of random integer array each time printing out the position and the return value for get_next()  (I added a command line option to turn this off for large arrays, so that the user doesn't have to wait for a huge array to print).  get_next() Works by initially finding the first value in the min_indexes that does not exceed the bounds of its partition.  That value becomes the initial minimum.  A for loop cycles through the remaining partitions looking for dataArray[minIndices[i]] that is less than the current minimum and that the partition for minIndices[i] has not been exhausted (this is checked by testing validRanges[i]).  If this is true then dataArray[minIndices[i]] becomes the new presumptive minimum.  Finally the minIndices[i] is incremented, if minIndices[i] after incrementation is past its partition size then validRanges[i] is set to 0;  Then minimum value is then returned.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+\tab The last thing the program does it is time how long it takes for the main thread alone to complete the insertion sort and then print out that time.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\fs22\loch\f3
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af4\dbch\af4\rtlch \ltrch\loch\fs30\loch\f3
+System Information:}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af4\dbch\af4\afs24\rtlch \ltrch\loch\fs24\loch\f3
+Results were produced on a Intel i7-3820 @ 3.60 GHz;  This has 4 actual cores each with 2 threads.  }
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af4\dbch\af4\rtlch \ltrch\loch\fs30\loch\f3
+OS and Compilation Information:}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af5\dbch\af5\afs24\rtlch \ltrch\loch\fs24\loch\f3
+\tab The windows version was compiled using Microsoft Visual Studio 2010.  The linux version was compiled using gcc on ubuntu 12.04.3 i386 VirtualBox using console command: cc OSHW8.c -o OSHW8 -pthread -lrt}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af4\dbch\af4\rtlch \ltrch\loch\fs30\loch\f3
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af4\dbch\af4\rtlch \ltrch\loch\fs30\loch\f3
+Analysis: }
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af4\dbch\af4\rtlch \ltrch\loch\fs30\loch\f3
+\tab }{\cf1\hich\af4\dbch\af4\afs24\rtlch \ltrch\loch\fs24\loch\f3
+The advantage of multiple threads didn't become evident until the size the the array got to around 2}{\cf1{\*\updnprop5801}\up13\hich\af4\dbch\af4\afs24\rtlch \ltrch\loch\fs24\loch\f3
+16}{\cf1\hich\af4\dbch\af4\afs24\rtlch \ltrch\loch\fs24\loch\f3
+.  The Windows version outperform the the linux version by far amount, however I wonder if that might not have something to do with the fact the the linux OS was running in virtual box not as the native OS.}
+\par \trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt55\trpaddfl3\trpaddl55\trpaddfb3\trpaddb55\trpaddfr3\trpaddr55\clbrdrt\brdrs\brdrw1\brdrcf1\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\cellx3495\clbrdrt\brdrs\brdrw1\brdrcf1\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\cellx5850\clbrdrt\brdrs\brdrw1\brdrcf1\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\cellx8085\clbrdrt\brdrs\brdrw1\brdrcf1\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\clbrdrr\brdrs\brdrw1\brdrcf1\cellx9975\pard\plain \s21{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\noline\cf0\kerning1\hich\af6\langfe2052\dbch\af8\loch\f0\fs24\lang1033\intbl{\rtlch \ltrch\loch
+OS}\cell\pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\intbl\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\loch\f3
+65536 ints, 8 threads}\cell\pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\intbl\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\loch\f3
+65536 ints, 4 threads}\cell\pard\plain \s21{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\noline\cf0\kerning1\hich\af6\langfe2052\dbch\af8\loch\f0\fs24\lang1033\intbl{\rtlch \ltrch\loch
+Relative Speed}\cell\row\trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt55\trpaddfl3\trpaddl55\trpaddfb3\trpaddb55\trpaddfr3\trpaddr55\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\cellx3495\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\cellx5850\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\cellx8085\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\clbrdrr\brdrs\brdrw1\brdrcf1\cellx9975\pard\plain \s21{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\noline\cf0\kerning1\hich\af6\langfe2052\dbch\af8\loch\f0\fs24\lang1033\intbl{\rtlch \ltrch\loch
+Windows}\cell\pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\intbl\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\loch\f3
+114241 microS}\cell\pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\intbl\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\loch\f3
+316061. microS}\cell\pard\plain \s21{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\noline\cf0\kerning1\hich\af6\langfe2052\dbch\af8\loch\f0\fs24\lang1033\intbl{\rtlch \ltrch\loch
+Win32 4.5times}\cell\row\trowd\trql\trleft0\ltrrow\trpaddft3\trpaddt55\trpaddfl3\trpaddl55\trpaddfb3\trpaddb55\trpaddfr3\trpaddr55\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\cellx3495\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\cellx5850\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\cellx8085\clbrdrl\brdrs\brdrw1\brdrcf1\clbrdrb\brdrs\brdrw1\brdrcf1\clbrdrr\brdrs\brdrw1\brdrcf1\cellx9975\pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\intbl\sl480\slmult1{\cf1\hich\af5\dbch\af5\afs24\rtlch \ltrch\loch\fs24\loch\f3
+ubuntu 12.04.3 i386 VirtualBox}\cell\pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\intbl\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\loch\f3
+504934. microS}\cell\pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\intbl\sl480\slmult1{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\loch\f3
+1089226. microS}\cell\pard\plain \s21{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\noline\cf0\kerning1\hich\af6\langfe2052\dbch\af8\loch\f0\fs24\lang1033\intbl{\rtlch \ltrch\loch
+Win32  }{\cf1\hich\af5\dbch\af5\rtlch \ltrch\loch\loch\f3
+3.5times}\cell\row\pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af4\dbch\af4\rtlch \ltrch\loch\fs30\loch\f3
+Win32 Output:}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+C:\\Users\\Kenneth\\Documents\\Visual Studio 2010\\Projects\\OSHW8\\Debug>OSHW8.exe 4 1}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Initial Array}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[0] = 48}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[1] = 7196}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[2] = 9294}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[3] = 9091}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[4] = 7031}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[5] = 23577}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[6] = 17702}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[7] = 23503}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[8] = 27217}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[9] = 12168}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[10] = 5409}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[11] = 28233}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[12] = 2023}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[13] = 17152}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[14] = 21578}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[15] = 2399}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+SORTED IN PARALLEL}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 0 = 48}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 1 = 2023}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 2 = 2399}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 3 = 5409}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 4 = 7031}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 5 = 7196}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 6 = 9091}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 7 = 9294}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 8 = 12168}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 9 = 17152}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 10 = 17702}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 11 = 21578}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 12 = 23503}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 13 = 23577}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 14 = 27217}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 15 = 28233}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 292.965611 microseconds for 2 threads to be created and complete there searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0.853298 microseconds to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+C:\\Users\\Kenneth\\Documents\\Visual Studio 2010\\Projects\\OSHW8\\Debug>OSHW8.exe 5 2}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Initial Array}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[0] = 48}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[1] = 7196}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[2] = 9294}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[3] = 9091}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[4] = 7031}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[5] = 23577}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[6] = 17702}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[7] = 23503}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[8] = 27217}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[9] = 12168}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[10] = 5409}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[11] = 28233}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[12] = 2023}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[13] = 17152}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[14] = 21578}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[15] = 2399}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[16] = 23863}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[17] = 16025}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[18] = 8489}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[19] = 19718}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[20] = 22454}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[21] = 12798}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[22] = 1164}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[23] = 14182}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[24] = 29498}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[25] = 1731}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[26] = 27271}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[27] = 18899}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[28] = 6936}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[29] = 27897}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[30] = 11449}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[31] = 31232}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+SORTED IN PARALLEL}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 0 = 48}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 1 = 1164}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 2 = 1731}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 3 = 2023}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 4 = 2399}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 5 = 5409}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 6 = 6936}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 7 = 7031}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 8 = 7196}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 9 = 8489}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 10 = 9091}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 11 = 9294}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 12 = 11449}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 13 = 12168}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 14 = 12798}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 15 = 14182}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 16 = 16025}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 17 = 17152}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 18 = 17702}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 19 = 18899}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 20 = 19718}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 21 = 21578}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 22 = 22454}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 23 = 23503}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 24 = 23577}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 25 = 23863}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 26 = 27217}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 27 = 27271}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 28 = 27897}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 29 = 28233}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 30 = 29498}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 31 = 31232}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 308.324973 microseconds for 4 threads to be created and complete there searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 2.559894 microseconds to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+C:\\Users\\Kenneth\\Documents\\Visual Studio 2010\\Projects\\OSHW8\\Debug>OSHW8.exe 8 1 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 197.111814 microseconds for 2 threads to be created and complete there searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 69.685995 microseconds to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+C:\\Users\\Kenneth\\Documents\\Visual Studio 2010\\Projects\\OSHW8\\Debug>OSHW8.exe 8 2 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 229.252702 microseconds for 4 threads to be created and complete there searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 70.254860 microseconds to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+C:\\Users\\Kenneth\\Documents\\Visual Studio 2010\\Projects\\OSHW8\\Debug>OSHW8.exe 8 3 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 374.597777 microseconds for 8 threads to be created and complete there searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 71.677023 microseconds to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+C:\\Users\\Kenneth\\Documents\\Visual Studio 2010\\Projects\\OSHW8\\Debug>OSHW8.exe 16 1 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 1006571.531536 microseconds for 2 threads to be created and complete there searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 3983588.237118 microseconds to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+C:\\Users\\Kenneth\\Documents\\Visual Studio 2010\\Projects\\OSHW8\\Debug>OSHW8.exe 16 2 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 316061.256549 microseconds for 4 threads to be created and complete there searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 3992256.321586 microseconds to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+C:\\Users\\Kenneth\\Documents\\Visual Studio 2010\\Projects\\OSHW8\\Debug>OSHW8.exe 16 3 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 114240.944589 microseconds for 8 threads to be created and complete there searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 4115843.438040 microseconds to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+C:\\Users\\Kenneth\\Documents\\Visual Studio 2010\\Projects\\OSHW8\\Debug>OSHW8.exe 20 3 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 28737256.778101 microseconds for 8 threads to be created and complete there searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 1021305312.547376 microseconds to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+C:\\Users\\Kenneth\\Documents\\Visual Studio 2010\\Projects\\OSHW8\\Debug>}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf1\hich\af4\dbch\af4\rtlch \ltrch\loch\fs30\loch\f3
+Posix Output:}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+adjuser@adminuser-VirtualBox:~$ ./OSHW8 4 1}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Initial Array}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[0] = 1205554746}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[1] = 483147985}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[2] = 844158168}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[3] = 953350440}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[4] = 612121425}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[5] = 310914940}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[6] = 1210224072}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[7] = 1856883376}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[8] = 1922860801}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[9] = 495649264}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[10] = 8614858}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[11] = 989089924}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[12] = 378651393}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[13] = 1344681739}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[14] = 2029100602}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[15] = 1816952841}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+SORTED IN PARALLEL}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 0 = 8614858}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 1 = 310914940}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 2 = 378651393}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 3 = 483147985}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 4 = 495649264}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 5 = 612121425}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 6 = 844158168}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 7 = 953350440}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 8 = 989089924}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 9 = 1205554746}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 10 = 1210224072}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 11 = 1344681739}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 12 = 1816952841}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 13 = 1856883376}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 14 = 1922860801}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 15 = 2029100602}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 173884 ns for 2 threads to be created and complete their searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 921 ns to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+adminuser@adminuser-VirtualBox:~$ ./OSHW8 5 2}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Initial Array}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[0] = 1205554746}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[1] = 483147985}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[2] = 844158168}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[3] = 953350440}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[4] = 612121425}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[5] = 310914940}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[6] = 1210224072}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[7] = 1856883376}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[8] = 1922860801}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[9] = 495649264}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[10] = 8614858}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[11] = 989089924}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[12] = 378651393}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[13] = 1344681739}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[14] = 2029100602}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[15] = 1816952841}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[16] = 21468264}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[17] = 552076975}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[18] = 87517201}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[19] = 953369895}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[20] = 374612515}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[21] = 787097142}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[22] = 126313438}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[23] = 1207815258}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[24] = 287632273}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[25] = 1886964647}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[26] = 1220723885}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[27] = 1119448937}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[28] = 444268468}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[29] = 1865680798}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[30] = 1654563454}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+dataArray[31] = 1649823214}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+SORTED IN PARALLEL}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 0 = 8614858}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 1 = 21468264}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 2 = 87517201}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 3 = 126313438}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 4 = 287632273}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 5 = 310914940}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 6 = 374612515}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 7 = 378651393}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 8 = 444268468}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 9 = 483147985}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 10 = 495649264}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 11 = 552076975}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 12 = 612121425}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 13 = 787097142}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 14 = 844158168}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 15 = 953350440}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 16 = 953369895}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 17 = 989089924}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 18 = 1119448937}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 19 = 1205554746}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 20 = 1207815258}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 21 = 1210224072}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 22 = 1220723885}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 23 = 1344681739}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 24 = 1649823214}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 25 = 1654563454}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 26 = 1816952841}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 27 = 1856883376}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 28 = 1865680798}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 29 = 1886964647}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 30 = 1922860801}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+Position 31 = 2029100602}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 235003 ns for 4 threads to be created and complete their searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 1702 ns to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+adminuser@adminuser-VirtualBox:~$ ./OSHW8 8 1 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 262249 ns for 2 threads to be created and complete their searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 84769 ns to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+adminuser@adminuser-VirtualBox:~$ ./OSHW8 8 2 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 299739 ns for 4 threads to be created and complete their searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 92517 ns to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+adminuser@adminuser-VirtualBox:~$ ./OSHW8 8 3 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 363619 ns for 8 threads to be created and complete their searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 83620 ns to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+adminuser@adminuser-VirtualBox:~$ ./OSHW8 16 1 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 2 s, 122910975 ns for 2 threads to be created and complete their searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 7 s, 479273883 ns to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+adminuser@adminuser-VirtualBox:~$ ./OSHW8 16 2 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 1 s, 89226404 ns for 4 threads to be created and complete their searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 7 s, 471482994 ns to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+adminuser@adminuser-VirtualBox:~$ ./OSHW8 16 3 -}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 0 s, 504934273 ns for 8 threads to be created and complete their searches.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf0\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+It took 7 s, 606902426 ns to perform the insertion sort using the main thread.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033{\cf3\hich\af4\dbch\af4\afs19\rtlch \ltrch\loch\fs19\loch\f4
+adminuser@adminuser-VirtualBox:~$ }
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\cf3\hich\af4\dbch\af4\rtlch \ltrch\loch\fs19\loch\f4
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af6\langfe2052\dbch\af8\afs24\lang1081\loch\f0\fs24\lang1033\sl480\slmult1{\rtlch \ltrch\loch
+}
+\par }
